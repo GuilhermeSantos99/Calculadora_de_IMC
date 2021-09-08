@@ -30,17 +30,17 @@ def calcular():
     bg = f'{cor}'
 ).pack()
        
-    if 16 > imc < 16.9:
+    if imc < 16.9:
         Faixa = ('Muito abaixo do peso')
-    elif 17 > imc < 18.4:
+    elif 17 <= imc <= 18.4:
         Faixa = ('Abaixo do peso')   
-    elif 18.5 > imc < 24.9:
+    elif 18.5 <= imc <= 24.9:
         Faixa = ('Peso normal')
-    elif 25 > imc < 29.9:
+    elif 25 <= imc <= 29.9:
         Faixa = ('Acima do peso')
-    elif 30 > imc < 34.9:
+    elif 30 <= imc <= 34.9:
         Faixa = ('Obesidade Grau I')
-    elif 35 > imc < 40:
+    elif 35 <= imc <= 40:
         Faixa = ('Obesidade Grau II')
     elif imc > 40:
         Faixa = ('Obesidade Grau III')
